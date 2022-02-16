@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello-wasm</title>
+</head>
+<body>
+<script type="module">
+    import {add, init} from "./pkg/hello_wasm.js";
+
+    console.log("hello-wasm")
+
+    // import init, {add, calculate_first_deposit_lp_tokens_to_mint} from "./pkg/hello_wasm.js";
+    // console.log(add(2,2))
+    // console.log(calculate_first_deposit_lp_tokens_to_mint(6000000, 255575287200))
+
+    await init()
+
+    console.log(add(1,2))
+</script>
+
+</body>
+</html>
